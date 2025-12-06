@@ -17,11 +17,7 @@ export default function ContactForm() {
     }, 1500);
   };
 
-  /* ------------------------------
-     Smooth Scroll Variants
-  ------------------------------ */
 
-  // ✨ WHOLE SECTION animation (fade + slide)
   const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 60 },
     show: {
@@ -29,13 +25,12 @@ export default function ContactForm() {
       y: 0,
       transition: {
         duration: 1,
-        ease: [0.22, 1, 0.36, 1], // ⭐ buttery smooth easing
+        ease: [0.22, 1, 0.36, 1], 
         staggerChildren: 0.25,
       },
     },
   };
 
-  // ✨ for each child (heading, subtitle, form, inputs)
   const item: Variants = {
     hidden: { opacity: 0, y: 30 },
     show: {
@@ -55,7 +50,7 @@ export default function ContactForm() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.3 }}
-      className="w-full py-10 bg-white text-gray-900 flex flex-col items-center"
+      className="w-full py-10 bg-white text-gray-900 flex flex-col items-center px-2"
     >
       <motion.h2
         variants={item}
@@ -72,7 +67,6 @@ export default function ContactForm() {
         questions!
       </motion.p>
 
-      {/* Form Container */}
       <motion.form
         variants={item}
         onSubmit={sendEmail}
@@ -126,7 +120,7 @@ export default function ContactForm() {
 
           {sent && (
             <p className="text-green-400 text-sm mt-4 text-center">
-              Message Sent Successfully ✔
+              Message Sent Successfully 
             </p>
           )}
         </motion.div>

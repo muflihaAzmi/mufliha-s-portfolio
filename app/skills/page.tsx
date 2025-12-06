@@ -26,7 +26,7 @@ export default function Skill() {
   ];
 
   return (
-    <div className="container mx-auto px-6 md:px-24 md:py-20">
+    <div className="container mx-auto px-6 md:px-24 md:py-20 py-10">
 
       {/* Heading */}
       <motion.h1
@@ -39,7 +39,7 @@ Tech Stack      </motion.h1>
 
       <div className="hidden md:flex justify-between gap-10">
 
-        <div className="w-1/3 bg-white shadow-md rounded-xl p-6 h-[500px] overflow-y-scroll hide-scrollbar">
+        <div className="w-1/4 bg-white shadow-md rounded-xl p-6 h-[500px] overflow-y-scroll hide-scrollbar">
           <h2 className="text-2xl font-bold text-zinc-800 mb-4">Soft Skills</h2>
 
           <ul className="space-y-4">
@@ -56,9 +56,10 @@ Tech Stack      </motion.h1>
             ))}
           </ul>
         </div>
+            
+            <h2 className="text-2xl font-bold text-zinc-800 md:hidden">Technical Skills</h2>
 
         <div className="w-2/3 flex flex-col gap-6 h-[500px] overflow-y-scroll hide-scrollbar">
-          <h2 className="text-2xl font-bold text-zinc-800">Technical Skills</h2>
 
           {technicalSkills.map((item, index) => (
             <motion.div
@@ -125,13 +126,13 @@ Tech Stack      </motion.h1>
           {technicalSkills.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-zinc-100 rounded-lg p-4 flex justify-between items-center"
+              className="bg-gray-800 hover:bg-gray-600  rounded-lg p-4 flex justify-between items-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
             >
-              <span className="font-semibold text-zinc-800">{item.title}</span>
-              <ExternalLink size={18} className="text-zinc-600" />
+              <span className="font-semibold  text-gray-100">{item.title}</span>
+              <ExternalLink size={18} className=" text-gray-100" />
             </motion.div>
           ))}
         </div>

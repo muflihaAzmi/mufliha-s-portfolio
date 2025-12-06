@@ -4,6 +4,7 @@ import React from 'react';
 import { Lora } from "next/font/google";
 import { motion } from 'framer-motion';
 import { Download } from "lucide-react";
+import Link from 'next/link';
 
 
 
@@ -56,14 +57,14 @@ export default function About() {
             </div>
             <motion.div className='mt-10'
             >
-                <a
+                <Link
                     href="/mufliha.pdf"
                     download
-                    className="flex items-center gap-2 px-4 py-3 bg-white text-black font-semibold rounded-lg shadow hover:bg-gray-200 transition"
+                    className="flex items-center gap-2 px-4 py-3 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:shadow-2xl hover:shadow-gray-500 hover:bg-gray-200 transition"
                 >
                     <Download size={18} />
                     Download Resume
-                </a>
+                </Link>
             </motion.div>
         </motion.div>
     );
