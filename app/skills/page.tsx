@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 export default function Skill() {
-  const [open, setOpen] = useState(false); // mobile collapsible state
+  const [open, setOpen] = useState(false); 
 
   const technicalSkills = [
     { title: "React", link: "https://react.dev/" },

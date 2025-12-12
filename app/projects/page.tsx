@@ -20,8 +20,8 @@ export default function Projects() {
     {
       img: "/pointer.png",
       title: "POINTER",
-      desc: "A fully responsive portfolio built with Next.js, Tailwind, and animations.",
-      full: "This project includes framer-motion animations, dynamic routing, reusable components, using nextjs and tailwind css",
+      desc: "A fully responsive project built with Next.js, Tailwind, and animations.",
+      full: "This is a website includes framer-motion animations, dynamic routing, reusable components, using nextjs and tailwind css",
       link: "",
     },
     {
