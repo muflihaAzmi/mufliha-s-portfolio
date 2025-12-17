@@ -34,7 +34,7 @@ export default function Projects() {
   ];
 
   const sectionVariants: Variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 10 },
     show: {
       opacity: 1,
       y: 0,
@@ -49,7 +49,7 @@ export default function Projects() {
   const cardVariants: Variants = {
     hidden: (side: "left" | "right") => ({
       opacity: 0,
-      x: side === "left" ? -120 : 120,
+      x: side === "left" ? -5 : 5,
     }),
     show: {
       opacity: 1,
@@ -82,7 +82,7 @@ export default function Projects() {
 
       <div className="space-y-24 relative py-20">
         {data.map((item, i) => {
-          const side = i % 2 === 0 ? "left" : "right";
+          const side = i %2 === 0 ? "left" : "right";
 
           return (
             <motion.div
@@ -118,7 +118,7 @@ export default function Projects() {
               {/* Card */}
               <div
                 className={`group w-96 p-4 rounded-xl shadow-lg bg-white cursor-pointer border transition-all duration-300 ${
-                  side === "left" ? "mr-10" : "ml-10"
+                  side === "left" ? "mr-5" : "ml-5"
                 }`}
               >
                 <img
