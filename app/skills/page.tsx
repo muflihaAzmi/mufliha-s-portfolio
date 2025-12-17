@@ -37,7 +37,7 @@ export default function Skill() {
       >
 Tech Stack      </motion.h1>
 
-      <div className="hidden md:flex justify-between gap-10">
+      <div className="hidden md:flex justify-around ">
 
         <div className="w-1/4 bg-white shadow-md rounded-xl p-6 h-[500px] overflow-y-scroll hide-scrollbar">
           <h2 className="text-2xl font-bold text-zinc-800 mb-4">Soft Skills</h2>
@@ -64,7 +64,7 @@ Tech Stack      </motion.h1>
           {technicalSkills.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 hover:bg-gray-600 transition shadow-md rounded-xl p-6 flex justify-between items-center"
+              className="bg-gray-800 hover:bg-gray-600 transition shadow-md rounded-xl p-10 flex justify-between items-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
