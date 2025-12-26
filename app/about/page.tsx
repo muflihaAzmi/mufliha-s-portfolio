@@ -16,7 +16,7 @@ const lora = Lora({
 export default function About() {
     return (
         <motion.div
-            className={` container mx-auto flex items-center p-6 bg-gray-900 flex-col md:h-[500px] h-[700px] mt-20 ${lora.className}`}
+            className={` container mx-auto flex items-center p-6 bg-gray-900 flex-col md:h-[500px] h-[700px] mt-20  ${lora.className}`}
         >
             <motion.h1
                 className="text-4xl font-bold text-white text-center items-center mt-10"

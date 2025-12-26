@@ -1,4 +1,3 @@
-"use client";
 
 import { motion, Variants } from "framer-motion";
 import { ChevronRight, ExternalLink } from "lucide-react";
@@ -69,7 +68,6 @@ export default function Projects() {
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
     >
-      {/* Title */}
       <motion.h1
         variants={sectionVariants}
         className="text-4xl font-bold text-white text-center items-center md:mt-10 tracking-wider"
@@ -77,7 +75,6 @@ export default function Projects() {
         Work I&apos;ve Built{" "}
       </motion.h1>
 
-      {/* Vertical line */}
       <div className="absolute left-1/2 top-36 h-200 border-l-2 border-dashed border-gray-600 -translate-x-1/2"></div>
 
       <div className="space-y-24 relative py-20">
@@ -150,7 +147,6 @@ export default function Projects() {
         })}
       </div>
 
-      {/* MODAL */}
       {open !== null && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50">
           <div className="bg-white w-[600px] max-h-[90vh] overflow-y-auto rounded-xl shadow-xl p-4 animate-scaleIn">

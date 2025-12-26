@@ -21,7 +21,7 @@ function Navbar() {
           <img src="frontgirl.webp" className="w-10 h-10 rounded-full"></img>
         </div>
         <div className="flex justify-center md:block hidden">
-          <Link href="/home" className="px-4">
+          <Link href="/" className="px-4">
             Home
           </Link>
           <Link href="/about" className="px-4">
