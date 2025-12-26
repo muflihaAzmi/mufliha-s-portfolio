@@ -1,4 +1,3 @@
-"use client"
 
 import About from "./about/page";
 import Home from "./home/page";

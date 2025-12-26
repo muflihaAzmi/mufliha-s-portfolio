@@ -1,4 +1,4 @@
-
+"use client"
 import { motion, Variants } from "framer-motion";
 import { ChevronRight, ExternalLink } from "lucide-react";
 import Link from "next/link";

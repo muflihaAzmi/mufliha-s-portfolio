@@ -35,7 +35,7 @@ export default function About() {
                     viewport={{ once: true, amount: 0.4 }}
                     className="block"
                 >
-                    I’m  <span className='text-[30px]'>Mufliha </span>, a front-end developer with a strong focus on creating visually
+                    I’m  <span className='text-[30px] text-gray-400'>Mufliha </span>, a front-end developer with a strong focus on creating visually
                     appealing and performance-driven web interfaces. I specialize in React,
                     Next.js, Tailwind CSS, and modern JavaScript, and I enjoy transforming ideas
                     into smooth, intuitive digital experiences.
